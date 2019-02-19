@@ -1930,3 +1930,10 @@ if __name__ == '__main__':
     main()
 
 ```
+
+Pandas read all csv files in a folder
+---------------------
+```python
+pd.concat(map(pd.read_csv, glob.glob(os.path.join(HOME_PATH, "mailgun_error_*.csv"))))
+```
+
